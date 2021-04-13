@@ -20,10 +20,15 @@ h1, h2, h3, h4, h5 {
     color: #219EBC;
 }
 
+hr {
+    border-color: #FB8500;
+    border-top-width: 2px;
+}
 
 body{
     background-color: #8ECAE6;
     color: #023047;
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;;
 }
 
 .container {
