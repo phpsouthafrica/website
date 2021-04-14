@@ -1,0 +1,37 @@
+
+/* Define our official colour for reference */
+.phpsa-light-blue {
+    color: #8ECAE6;
+}
+.phpsa-bright-blue {
+    color: #219EBC;
+}
+.phpsa-dark-blue {
+    color: #023047;
+}
+.phpsa-yellow {
+    color: #FFB703;
+}
+.phpsa-orange{
+    color: #FB8500;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #219EBC;
+}
+
+hr {
+    border-color: #FB8500;
+    border-top-width: 2px;
+}
+
+body{
+    background-color: #8ECAE6;
+    color: #023047;
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;;
+}
+
+.container {
+    background-color: aliceblue;
+    box-shadow: 0 0 30px -1px #666666;
+}
