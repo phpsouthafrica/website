@@ -18,7 +18,7 @@ COPY . ./
 RUN npm set progress=false
 RUN npm --unsafe-perm install --prefer-offline
 RUN npx browserslist@latest --update-db
-RUN npm run build
+RUN npm run build --parallel --cache --hardSource
 
 
 EXPOSE 3000/tcp
