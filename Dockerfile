@@ -6,6 +6,8 @@ ENV LANGUAGE="en_US.UTF-8"
 ENV TERM="xterm"
 ENV PATH="./node_modules/.bin/:/home/node/.npm-global/bin:$PATH"
 ENV NPM_CONFIG_PREFIX=/home/node/.npm-global
+ENV HOST=0.0.0.0
+ENV PORT=3000
 
 RUN mkdir -p /home/node/.npm-global/lib
 RUN mkdir -p /usr/src/app
