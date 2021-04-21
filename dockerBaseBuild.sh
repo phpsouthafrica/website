@@ -15,14 +15,14 @@ fi
 docker buildx use "${BUILDX_NAME}"
 docker buildx inspect --bootstrap
 
-CMD='docker buildx build --load '"${DOCKER_BUILD_TYPE}"' --platform  linux/arm/v7,linux/arm64,linux/amd64 --tag '"${IMAGE_NAME}"' .'
+CMD='docker buildx build --load '"${DOCKER_BUILD_TYPE}"' --platform linux/amd64 --tag '"${IMAGE_NAME}"' .'
 echo "Build command for load: "
 echo "${CMD}"
 echo ""
 ${CMD}
 
 if [[ "${DO_DOCKER_PUSH}" = "TRUE" ]]; then
-  CMD='docker buildx build --push '"${DOCKER_BUILD_TYPE}"' --platform  linux/arm/v7,linux/arm64,linux/amd64 --tag '"${IMAGE_NAME}"' .'
+  CMD='docker buildx build --push '"${DOCKER_BUILD_TYPE}"' --platform linux/arm/v7,linux/arm64,linux/amd64 --tag '"${IMAGE_NAME}"' .'
   echo "Build command for push: "
   echo "${CMD}"
   echo ""
