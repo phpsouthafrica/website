@@ -35,3 +35,7 @@ body{
     background-color: aliceblue;
     box-shadow: 0 0 30px -1px #666666;
 }
+
+time {
+    font-style: italic;
+}
